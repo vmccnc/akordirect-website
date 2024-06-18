@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { APP_BASE_HREF } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -16,6 +17,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ProjectComponent } from './components/project-list/project/project.component';
 import { ProjectListComponent } from './components/project-list/project-list.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
+import { PageDividerComponent } from './components/page-divider/page-divider.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,9 @@ import { ProjectListComponent } from './components/project-list/project-list.com
     LayoutComponent,
     ProjectComponent,
     ProjectListComponent,
+    MainPageComponent,
+    PageDividerComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,

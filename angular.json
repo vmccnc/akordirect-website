@@ -33,7 +33,7 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "baseHref": "/akordirect-website/"
+            "baseHref": "/"
           },
           "configurations": {
             "production": {

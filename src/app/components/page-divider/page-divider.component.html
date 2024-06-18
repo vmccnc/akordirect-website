@@ -1,0 +1,13 @@
+<div class="page-divider">
+    <div class="line">
+      <div class="line-divider"></div>
+      <div class="image-container">
+        <img src="assets/imagies/divider.png" alt="Divider Image">
+      </div>
+      <div class="line-divider"></div>
+    </div>
+    <div class="page-number" [ngClass]="{'left': isOddPage, 'right': !isOddPage}">
+      {{ pageNumber }}
+    </div>
+  </div>
+  
