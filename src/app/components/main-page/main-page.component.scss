@@ -1,0 +1,71 @@
+.main-page-container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/imagies/mainPage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 8rem; 
+}
+
+h2 {
+    font-family: 'Neue Machina';
+    font-size: 5rem;
+    margin-top: -7rem;
+    margin-left: 6rem;
+    color: #3F3F3F;
+}
+
+.title-container {
+    background-color: #FFFFFF;
+    margin-top: 8rem;
+    max-width: 60%; 
+    margin-right: auto;
+    padding: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.title {
+    font-family: 'TT Travels', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.contrast-title {
+    color: #FFB47D;
+    font-size: 5rem;
+    margin: 0;  
+}
+
+.moto-container {
+    background-color: #FFFFFF;
+    max-width: 50%; 
+    margin-right: auto;
+    border-bottom-right-radius: 2rem;
+    padding: 1rem;
+}
+
+.moto {
+    font-family: 'TT Travels', sans-serif;
+    font-size: 2rem;
+    color: #565656;
+    margin-top: 0;
+}
+
+.right-align {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.left-align {
+    display: flex;
+    justify-content: flex-start;  
+}
+
+app-button {
+    display: block;
+    margin: 6rem 0 0 4rem;
+}

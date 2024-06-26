@@ -1,0 +1,27 @@
+.page-with-carousel-container {
+    background-color: #ebebeb;
+  }
+  
+  h2 {
+    font-size: 4rem;
+    color: #333;
+    margin: 2rem 6rem;
+  }
+  
+  .carousel {
+    margin-top: 20px;
+  }
+
+  .right-align {
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ .left-align {
+     display: flex;
+     justify-content: flex-start;  
+ }
+
+ mat-button-toggle-group {
+    margin: 2rem 6rem;
+ }

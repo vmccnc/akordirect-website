@@ -1,0 +1,151 @@
+.contact-page-container {
+    background-color: #333333;
+    color: #ffff;
+    padding: 3rem 6rem;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+
+    p {
+        width: 40%;
+        font-size: 1.5rem;
+        font-family: 'Neue Machina';
+    }
+   
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    color:#88F31D;
+}
+
+h3 {
+    margin: 0;
+    font-size: 4rem;
+    width: 75%;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#88F31D;
+}
+
+.contact-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+
+    p {
+        margin: 0;
+    }
+}
+
+.email {
+    font-size: 2rem;
+}
+
+.icons-container {
+    display: flex;
+    gap: 1rem;
+
+    img, svg {
+        height: 2rem;
+        width: 2rem;
+        margin: 0;
+    }
+    a:hover {
+        path {
+            fill: #88F31D;
+        }
+    }
+}
+
+img {
+    height: 25rem;
+    width: 25rem;
+    margin-left: -12rem;
+}
+
+.form-title{
+    color:#88F31D;
+    margin: 0;
+    align-self: flex-start;
+    font-size: 1.5rem;
+    font-family: 'Neue Machina';
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+    width: 100%;
+}
+
+.data {
+    border: 1px solid #9E9E9E;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: #373636;
+    height: 50px;
+    color: #88F31D;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.message {
+    border: 1px solid #9E9E9E;;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: transparent; 
+    height: 15rem;
+    color: #88F31D;
+    margin-bottom: 20px;
+    resize: none;
+    padding: 5px 20px;
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.data:focus,
+.message:focus {
+    border: 1px solid #488907;
+    background: #c2c8bb;
+    outline: #ffffff;
+}
+
+::placeholder {
+    font-family: inherit;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.agreement-text {
+    color: #c2c8bb;
+}
+
+

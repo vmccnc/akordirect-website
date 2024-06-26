@@ -1,6 +1,39 @@
-.project-list-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+.page-with-projects-container {
+    background-color: #ebebeb;
+}
 
+.projects-container {
+    margin: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+    color: #333;
+    // margin: 2rem 6rem;
+  }
+
+.project-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+    flex-wrap: wrap;
+
+}
+
+.right-align {
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ .left-align {
+     display: flex;
+     justify-content: flex-start;  
+ }
+
+ app-button {
+    display: block;
+    margin-top: 6rem;
+    margin-left: 40%;
+    padding-bottom: 6rem;
 }

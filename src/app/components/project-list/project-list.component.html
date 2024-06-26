@@ -1,3 +1,10 @@
-<div class="project-list-container">
-    <app-project *ngFor="let project of projects" [project]="project"></app-project>
+<div class="page-with-projects-container">
+    <app-page-divider [pageNumber]="'05'" class="left-align"></app-page-divider>
+    <div class="projects-container">
+    <h2>Наши проекты</h2>
+    <div class="project-list-container">
+        <app-project *ngFor="let project of (showAll ? projects : projects.slice(0, 4))" [project]="project"></app-project>
+    </div>
+    </div>
+    <app-button [buttonTitle]="'Еще проекты'" *ngIf="!showAll" (click)="showAllItems($event)"></app-button>
 </div>

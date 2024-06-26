@@ -1,35 +1,15 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav mode="side" opened>
-    <div class="nav-container">
-      <div class="icon-tabs">
-        <a class="nav-icon" routerLink="/">
-          <mat-icon fontIcon="dashboard_customize"></mat-icon>
-        </a>
-        <a class="nav-icon">
-          <mat-icon fontIcon="people_outline"></mat-icon>
-        </a>
-      </div>
-      <a class="nav-icon icon-tabs">
-        <mat-icon fontIcon="logout"></mat-icon>
-      </a>
-    </div>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar>
-      <span class="dashboard-title"><b>Test</b></span>
-      <mat-form-field subscriptSizing="dynamic" class="search-input">
-        <mat-label>Search here...</mat-label>
-        <input matInput placeholder="Search here..." type="search">
-        <mat-icon matPrefix class="search-icon">search</mat-icon>
-      </mat-form-field>
-      <mat-card-header class="logged-user-info-container">
-        <div mat-card-avatar class="avatar">Test</div>
-        <div class="logged-user-info">
-          <mat-card-title>Test</mat-card-title>
-          <mat-card-subtitle>Test</mat-card-subtitle>
-        </div>
-      </mat-card-header>
-    </mat-toolbar>
-    <ng-content></ng-content>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<header class="navbar">
+  <div class="logo">
+    <!-- Здесь ваш логотип или текст -->
+    Akor.Digital
+
+  </div>
+  <nav class="nav-links">
+    <!-- Здесь ссылки на разделы сайта или меню -->
+    <a href="#main">Главная</a>
+    <a href="#aboutCompany">О компании</a>
+    <a href="#services">Услуги</a>
+    <a href="#projects">Проекты</a>
+    <a href="#contacts">Contact</a>
+  </nav>
+</header>

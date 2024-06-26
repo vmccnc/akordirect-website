@@ -9,4 +9,6 @@ import { Project } from 'src/app/interfaces/project.interface';
 })
 export class ProjectComponent {
   @Input() project!: Project;
+
+
 }

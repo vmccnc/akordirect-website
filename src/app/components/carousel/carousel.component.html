@@ -1,0 +1,21 @@
+<div class="carousel-container">
+    <button mat-icon-button class="nav-button prev-button" (click)="prev()" >
+      <mat-icon>arrow_back_ios</mat-icon>
+    </button>
+    
+    <div class="carousel">
+      <div
+        class="card-wrapper"
+        *ngFor="let item of items; let i = index" 
+        [class.active]="i >= currentIndex && i < currentIndex + numberOfCardsShown" 
+        [class.left]="i % numberOfCardsShown === 0" [class.right]="i % numberOfCardsShown !== 0"
+      >
+        <ng-container *ngTemplateOutlet="template; context: { $implicit: item }"></ng-container>
+      </div>
+    </div>
+
+    <button mat-icon-button class="nav-button next-button" (click)="next()" [disabled]="currentIndex >= items.length - numberOfCardsShown">
+      <mat-icon>arrow_forward_ios</mat-icon>
+    </button>
+  </div>
+  

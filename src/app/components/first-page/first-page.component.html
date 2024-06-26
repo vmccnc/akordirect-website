@@ -1,0 +1,19 @@
+<div class="first-page-container">
+    <app-page-divider [pageNumber]="'01'" class="left-align"></app-page-divider>
+    <div class="top-elements-container">
+        <div class="text-container">
+            <div class="title-container">
+                <h2>Кто мы?</h2>
+                <p><b>Akor.Digital</b> - профессиональное агенство разработки мобильных приложений и сайтов. </p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="assets/imagies/firstPage.png" alt="FirstPage Image">
+        </div>
+    </div>
+    <app-carousel [items]="cards" [numberOfCardsShown]="2">
+        <ng-template let-card>
+          <app-description-card [title]="card.title" [description]="card.description" [imageUrl]="card.imageUrl"></app-description-card>
+        </ng-template>
+    </app-carousel>
+</div>

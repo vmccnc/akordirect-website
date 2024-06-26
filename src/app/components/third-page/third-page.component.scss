@@ -1,0 +1,79 @@
+.third-page-container {
+    background-color: #ebebeb;
+}
+
+.right-align {
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ .left-align {
+     display: flex;
+     justify-content: flex-start;  
+ }
+
+ .head-content-container {
+     display: flex;
+     justify-content: space-between;
+     align-items:center;
+    //  margin-left: 6rem;
+    //  margin-top: 4rem;
+     margin: 4rem 6rem;
+ }
+
+ h2 {
+     font-size: 4rem;
+     color: #3A3A3A;
+     margin:  0;
+ }
+
+ p {
+    font-size: 2rem;
+    width: 50%;
+ }  
+
+
+.content {
+    display: flex;
+    // justify-content: space-between;
+    align-items:flex-start;
+    gap: 7rem;
+ }
+
+ .pictures-container {
+     display: flex;
+     flex-direction: column;
+ }
+
+ img {
+     width: 20rem;
+     height: 20rem;
+     margin-left: -5rem;
+ }
+
+ .spiral-image{
+    width: 10rem;
+    height: 10rem; 
+    margin: 4rem 6rem;
+}
+
+mat-accordion {
+    width: 100%;
+    margin-right: 2rem;
+    font-family: 'TT Travels';
+    font-size: 2rem;
+}
+
+mat-expansion-panel {
+    padding: 1rem;
+}
+
+.third-page-button {
+    margin-left: 2rem;
+}
+
+app-button {
+    display: block;
+    margin-top: 6rem;
+    margin-left: 40%;
+}
