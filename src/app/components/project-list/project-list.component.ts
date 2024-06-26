@@ -15,6 +15,12 @@ export class ProjectListComponent {
     this.projects = this.projectsService.getProjects();
   };
 
+  showAll:boolean = false;
+
+  showAllItems(event: any) {
+    event.preventDefault();
+    this.showAll = true;
+  }
   // fetchData(): void {
   //   this.projects = this.projectsService.getProjects();
    

@@ -3,7 +3,8 @@
     align-items: center;
     position: relative;
     width: 30%;
-    margin: 20px 0;
+    // margin: 20px 0;
+    margin-top: 5rem;
   }
   
   .page-number {
@@ -11,6 +12,7 @@
     padding: 0 10px;
     display: flex;
     align-items: center; 
+    font-family: 'Neue Machina';
   }
   
   .page-number.left {
@@ -21,6 +23,14 @@
     order: -1;
   }
 
+  .left-align {
+    justify-content: flex-start;
+  }
+
+  .right-align {
+    justify-content: flex-end;
+  }
+  
   .line {
     flex-grow: 1;
     display: flex;
@@ -30,7 +40,6 @@
   .line-divider {
     width: 100%;
     border-bottom: 1px solid #474747; 
-    // margin: 0 10px; 
   }
   
   .image-container {

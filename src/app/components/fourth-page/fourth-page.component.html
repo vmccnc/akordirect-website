@@ -1,0 +1,18 @@
+<div class="page-with-carousel-container">
+    <app-page-divider [pageNumber]="'04'" class="right-align"></app-page-divider>
+    <h2>Технологии</h2>
+    <mat-button-toggle-group #group="matButtonToggleGroup" (change)="selectedCategory = group.value">
+      <mat-button-toggle *ngFor="let category of categories" [value]="category">
+        {{ category }}
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  
+    <div class="carousel">
+      <app-carousel [items]="cards[selectedCategory]" [numberOfCardsShown]="3">
+        <ng-template let-project>
+          <app-description-card [title]="project.title" [imageUrl]="project.imageUrl"></app-description-card>
+        </ng-template>
+      </app-carousel>
+    </div>
+  </div>
+  

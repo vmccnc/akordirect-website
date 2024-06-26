@@ -2,11 +2,19 @@
     display: block;
     width: 100%;
     height: 100vh;
-    background-image: url('../../../assets/imagies/Union.png');
+    background-image: url('../../../assets/imagies/mainPage.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 8rem; 
+}
+
+h2 {
+    font-family: 'Neue Machina';
+    font-size: 5rem;
+    margin-top: -7rem;
+    margin-left: 6rem;
+    color: #3F3F3F;
 }
 
 .title-container {
@@ -36,7 +44,6 @@
     background-color: #FFFFFF;
     max-width: 50%; 
     margin-right: auto;
-    // border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
     padding: 1rem;
 }
@@ -58,3 +65,7 @@
     justify-content: flex-start;  
 }
 
+app-button {
+    display: block;
+    margin: 6rem 0 0 4rem;
+}
