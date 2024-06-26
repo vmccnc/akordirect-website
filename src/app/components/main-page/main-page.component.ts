@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent {
-  
+  handleButtonClick(): void {
+
+
+    // Навигация по якорной ссылке
+    const anchor = document.querySelector('#contacts');
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

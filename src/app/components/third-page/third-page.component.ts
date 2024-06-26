@@ -8,4 +8,14 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 })
 export class ThirdPageComponent {
   readonly panelOpenState = signal(false);
+  
+  handleButtonClick(): void {
+
+
+    // Навигация по якорной ссылке
+    const anchor = document.querySelector('#contacts');
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }
