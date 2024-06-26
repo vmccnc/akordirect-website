@@ -10,6 +10,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import {MatExpansionModule} from '@angular/material/expansion';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +24,13 @@ import { ProjectListComponent } from './components/project-list/project-list.com
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { PageDividerComponent } from './components/page-divider/page-divider.component';
 import { ButtonComponent } from './components/button/button.component';
+import { FirstPageComponent } from './components/first-page/first-page.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { DescriptionCardComponent } from './components/description-card/description-card.component';
+import { SecondPageComponent } from './components/second-page/second-page.component';
+import { FourthPageComponent } from './components/fourth-page/fourth-page.component';
+import { ThirdPageComponent } from './components/third-page/third-page.component';
+import { ContactPageComponent } from './components/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +41,13 @@ import { ButtonComponent } from './components/button/button.component';
     MainPageComponent,
     PageDividerComponent,
     ButtonComponent,
+    FirstPageComponent,
+    CarouselComponent,
+    DescriptionCardComponent,
+    SecondPageComponent,
+    FourthPageComponent,
+    ThirdPageComponent,
+    ContactPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +61,8 @@ import { ButtonComponent } from './components/button/button.component';
     MatSidenavModule,
     MatToolbarModule,
     MatCardModule,
+    MatButtonToggleModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

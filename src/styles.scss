@@ -36,12 +36,17 @@ $vmccnc-web-angular-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: 'TT Travels';
-  src: url('../src/assets/fonts/TTTravels-Regular.woff') format('woff'),
+  src: url('../src/assets/fonts/TT-Travels/TTTravels-Regular.woff') format('woff'),
 }
 
 @font-face {
   font-family: 'TT Travels';
-  src: url('../src/assets/fonts/TTTravels-Medium.woff') format('woff'),
+  src: url('../src/assets/fonts/TT-Travels/TTTravels-Medium.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../src/assets/fonts/Neue-Machina/NeueMachina-Bold.woff') format('woff'),
 }
 
 html, body { height: 100%; }
