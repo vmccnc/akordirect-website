@@ -13,7 +13,6 @@ export class CarouselComponent {
   currentIndex = 0;
 
   prev() {
-    debugger;
     if (this.currentIndex > 0) {
       this.currentIndex--;
     }

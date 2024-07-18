@@ -15,6 +15,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -31,6 +32,9 @@ import { SecondPageComponent } from './components/second-page/second-page.compon
 import { FourthPageComponent } from './components/fourth-page/fourth-page.component';
 import { ThirdPageComponent } from './components/third-page/third-page.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { JoinUsPageComponent } from './components/join-us-page/join-us-page.component';
+import { AutoCarouselComponent } from './components/auto-carousel/auto-carousel.component';
+import { TechnologyCardComponent } from './components/technology-card/technology-card.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +52,9 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
     FourthPageComponent,
     ThirdPageComponent,
     ContactPageComponent,
+    JoinUsPageComponent,
+    AutoCarouselComponent,
+    TechnologyCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +69,7 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
     MatToolbarModule,
     MatCardModule,
     MatButtonToggleModule,
-    MatExpansionModule
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

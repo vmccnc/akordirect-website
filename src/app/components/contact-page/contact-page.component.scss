@@ -1,6 +1,6 @@
 .contact-page-container {
-    background-color: #333333;
-    color: #ffff;
+    background-color: #DDDDDD;
+    color: #3A3A3A;
     padding: 3rem 6rem;
 }
 
@@ -22,10 +22,6 @@
     justify-content: space-between;
 }
 
-span {
-    color:#88F31D;
-}
-
 h3 {
     margin: 0;
     font-size: 4rem;
@@ -33,7 +29,7 @@ h3 {
 }
 
 a {
-    color: #FFFFFF;
+    color: #3A3A3A;
     text-decoration: none;
 }
 
@@ -79,7 +75,7 @@ img {
 }
 
 .form-title{
-    color:#88F31D;
+    color:#3A3A3A;
     margin: 0;
     align-self: flex-start;
     font-size: 1.5rem;
@@ -100,7 +96,7 @@ img {
     border: 1px solid #9E9E9E;
     box-sizing: border-box;
     border-radius: 30px;
-    background: #373636;
+    background: #F9F8F8;
     height: 50px;
     color: #88F31D;
     margin-bottom: 20px;
@@ -114,16 +110,16 @@ img {
 }
 
 .message {
-    border: 1px solid #9E9E9E;;
+    border: 1px solid #9E9E9E;
     box-sizing: border-box;
     border-radius: 30px;
-    background: transparent; 
+    background: #F9F8F8; 
     height: 15rem;
     color: #88F31D;
     margin-bottom: 20px;
     resize: none;
     padding: 5px 20px;
-    font-family: 'Neue Machina';
+    font-family: 'Neue Machina Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -140,12 +136,12 @@ img {
 
 ::placeholder {
     font-family: inherit;
-    color: #ffffff;
+    color: #3A3A3A;
     font-size: 1rem;
 }
 
 .agreement-text {
-    color: #c2c8bb;
+    color: #3A3A3A;
 }
 
 

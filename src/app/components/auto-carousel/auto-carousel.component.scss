@@ -1,0 +1,18 @@
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition for the scroll */
+  }
+  
+  .slider-item {
+    flex: 0 0 calc(100% / 3.5); /* Adjust as needed for 3.5 items */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

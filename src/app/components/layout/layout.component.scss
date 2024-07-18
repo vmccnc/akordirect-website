@@ -1,6 +1,6 @@
 .navbar {
-  position: fixed; /* Фиксированное позиционирование */
-  top: 0; /* Прикрепление к верхней части экрана */
+  // position: fixed; /* Фиксированное позиционирование */
+  margin-bottom: -6rem; /* Прикрепление к верхней части экрана */
   left: 0;
   width: 100%; /* Ширина равна ширине экрана */
   // background-color: #333;
@@ -9,28 +9,31 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .logo {
     font-family: 'Neue Machina';
     font-size: 5rem;
     // margin-top: -7rem;
-    margin-left: 4rem;
+    margin-left: 8rem;
     color: #3F3F3F;
 }
 
 .nav-links {
   // float: right; 
   // justify-self: flex-start;
+  display: flex;
+  gap: 2rem;
   margin-right: 4rem;
 }
 
 .nav-links a {
-  color: #FCFCFC; /* Цвет ссылок */
+  color: #3A3A3A; /* Цвет ссылок */
   text-decoration: none; /* Убираем подчёркивание */
   margin-left: 20px; /* Отступ между ссылками */
   // border: 1px solid yellow;
   padding: 1rem 2rem;
-  background-color: rgba($color: #ffff, $alpha: 0.25);
-  border-radius: 24px;
+  background-color: rgba($color: #F8F8F8, $alpha: 0.2);
+  border-radius: 1rem;
 }

@@ -1,14 +1,19 @@
 <div class="main-page-container">
-    <!-- <h2>Akor.Digital</h2> -->
     <div class="title-container">
         <h1>
-            <p class="title">Агентство с экспертизой в</p>
-            <p class="title contrast-title">IT-разработке</p>
+            <p class="title">Digital-агенство с экспертизой в</p>
+            <p [style.color]="currentParagraph.color" id="paragraph">
+                {{ currentParagraph.title }}
+              </p>
         </h1>
     </div>
-    <div class="moto-container">
-        <p class="moto">Решаем земные <b>digital & IT</b> задачи.<br>
-            Стремимся к внеземному качеству.</p>
+    <div class="pazzle-blocks-container">
+    <div class="moto-container convex-left">
+        <p class="moto">Стремимся к совершенству в решении ваших <b>digital и IT</b> задач, используя передовые методы и технологии.</p>
+    </div>
+    <div class="statement-container convex-right">
+        <p class="statement">Быстро <span class="middot">&middot;</span> Эффективно <span class="middot">&middot;</span> Надежно</p>
+    </div>
     </div>
     <app-button [buttonTitle]="'Начать проект'" (click)="handleButtonClick()"></app-button>
 </div>

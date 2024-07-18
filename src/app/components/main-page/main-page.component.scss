@@ -1,29 +1,25 @@
 .main-page-container {
     display: block;
-    width: 100%;
+    // width: 100%;
     height: 100vh;
     background-image: url('../../../assets/imagies/mainPage.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 8rem; 
-}
+    margin: 0 4rem;
+    border-radius: 1rem;
 
-h2 {
-    font-family: 'Neue Machina';
-    font-size: 5rem;
-    margin-top: -7rem;
-    margin-left: 6rem;
-    color: #3F3F3F;
 }
 
 .title-container {
     background-color: #FFFFFF;
     margin-top: 8rem;
-    max-width: 60%; 
-    margin-right: auto;
-    padding: 1rem;
+    max-width: 100%; 
+    margin: 2rem 2rem 0 2rem;
+    padding: 2rem;
     border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
 
@@ -32,20 +28,39 @@ h2 {
     font-weight: bold;
     font-size: 4rem;
     margin: 0;
+    color: #3F3F3F;
 }
 
 .contrast-title {
-    color: #FFB47D;
+    color: #65CA00;
     font-size: 5rem;
-    margin: 0;  
+    margin-top: 2rem;  
+}
+
+#paragraph {
+    margin: 2rem 0;
+    font-size: 5rem;
+    transition: opacity 0.5s;
+  }
+
+.pazzle-blocks-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 2rem;
+    // flex-grow: 2;
+    max-width: 100%;
 }
 
 .moto-container {
+    position: relative;
     background-color: #FFFFFF;
-    max-width: 50%; 
-    margin-right: auto;
-    border-bottom-right-radius: 2rem;
-    padding: 1rem;
+    // max-width: 40%; 
+    flex: 0 0 50%;
+    border-bottom-left-radius: 2rem;
+    padding: 0 2rem 4rem 2rem;
+    box-sizing: border-box;
+
 }
 
 .moto {
@@ -54,6 +69,89 @@ h2 {
     color: #565656;
     margin-top: 0;
 }
+
+.statement-container {
+    position: absolute;
+    right: 6rem;
+	bottom: 17rem;
+    display: flex;
+    background-color: #FFFFFF;
+    // margin-left: 2rem;
+    // margin-right: 2rem;
+    // flex: 0 1 50%;
+    // max-width: 100%; 
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 2rem;
+    // padding: 2rem;
+    box-sizing: border-box;
+    border: 2rem solid transparent;
+    
+    height: 12rem;
+    // align-self: flex-end;
+    background-color: #3F3F3F;
+    align-items: center;
+    // justify-content: center;
+}
+
+.statement {
+    color: #FFFFFF;
+    font-size: 2.4rem;
+}
+
+.statement-container:after,
+.statement-container:before {
+	z-index: 0;
+	position: absolute;
+	display: block;
+	width: 24px;
+	height: 24px;
+	content: '';
+	clip-path: polygon(0.082% 0%,0% 0%,0% 100%,100% 100%,100% 99.918%,100% 99.918%,84.085% 98.066%,68.994% 93.913%,54.912% 87.642%,42.022% 79.44%,30.51% 69.49%,20.56% 57.978%,12.358% 45.088%,6.088% 31.006%,1.934% 15.915%,0.082% 0%);
+	background-color: inherit;
+	overflow: hidden;
+}
+
+.statement-container:before {
+	top: -24px;
+	left: 0;	
+}
+
+.statement-container:after {
+	right: -24px;
+	bottom: 0;
+}
+
+.middot {
+    color: #65CA00;
+    font-size: 4rem;
+}
+// .convex-left::before {
+//         content: '';
+//         position: absolute;
+//         top: 0;
+//         left: 100%;
+//         width: 0;
+//         height: 0;
+//         border-style: solid;
+//         border-width: 2rem 2rem 0 0; /* Установите размер по вашему желанию */
+//         border-color: lightblue transparent transparent transparent;
+//         z-index: 1;
+// }
+
+// .convex-right::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     right: 100%;
+//     width: 0;
+//     height: 0;
+//     border-style: solid;
+//     border-width: 2rem 0 0 2rem; /* Установите размер по вашему желанию */
+//     border-color: transparent transparent transparent lightgreen;
+//     z-index: 2;
+//   }
+
 
 .right-align {
    display: flex;
@@ -67,5 +165,8 @@ h2 {
 
 app-button {
     display: block;
-    margin: 6rem 0 0 4rem;
+    margin: 6rem 0 0 40%;
 }
+
+
+
