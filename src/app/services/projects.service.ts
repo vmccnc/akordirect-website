@@ -9,14 +9,15 @@ import { Project } from '../interfaces/project.interface';
 export class ProjectsService {
 
   projects = [
-    { title: 'Полный круг услуг', description: 'Проводим полный цикл разработки – от концепции и дизайна до тестирования и поддержки.', imageUrl: 'assets/imagies/project1.png' },
-    { title: 'Полный круг услуг', description: 'Проводим полный цикл разработки – от концепции и дизайна до тестирования и поддержки.', imageUrl: 'assets/imagies/project1.png' },
-    { title: 'Полный круг услуг', description: 'Проводим полный цикл разработки – от концепции и дизайна до тестирования и поддержки.', imageUrl: 'assets/imagies/project1.png' },
-    { title: 'Полный круг услуг', description: 'Проводим полный цикл разработки – от концепции и дизайна до тестирования и поддержки.', imageUrl: 'assets/imagies/project1.png' },
-    { title: 'Полный круг услуг', description: 'Проводим полный цикл разработки – от концепции и дизайна до тестирования и поддержки.', imageUrl: 'assets/imagies/project1.png' },
-    { title: 'Полный круг услуг', description: 'Проводим полный цикл разработки – от концепции и дизайна до тестирования и поддержки.', imageUrl: 'assets/imagies/project1.png' },
-    { title: 'Полный круг услуг', description: 'Проводим полный цикл разработки – от концепции и дизайна до тестирования и поддержки.', imageUrl: 'assets/imagies/project1.png' },
-
+    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
+    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
+    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
+    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
+    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
+    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
+    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
+    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
+    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
   ];
 
   getProjects() {
