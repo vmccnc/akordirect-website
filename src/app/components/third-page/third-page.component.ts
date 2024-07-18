@@ -1,4 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { Service } from 'src/app/interfaces/service.interface';
+import { ServicesService } from 'src/app/services/services.service';
 
 @Component({
   selector: 'app-third-page',
@@ -7,8 +9,18 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ThirdPageComponent {
-  readonly panelOpenState = signal(false);
+  constructor(private readonly servicesService: ServicesService) {
+    this.services = this.servicesService.getServices();
+  };
   
+  // readonly panelOpenState = signal(false);
+  panelOpenState = false;
+  services: Service[] = [];
+ 
+  handleDropDownClick(index: number) {
+    this.services[index].isExpanded = !this.services[index].isExpanded;
+  }
+
   handleButtonClick(): void {
 
 
@@ -18,4 +30,6 @@ export class ThirdPageComponent {
       anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
+
+  
 }

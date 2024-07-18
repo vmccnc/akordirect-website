@@ -1,99 +1,96 @@
 .second-page-container {
-    background-color: #ebebeb;
-    overflow: hidden;
+  background-color: #f9f8f8;
+  overflow: hidden;
 }
 
 .right-align {
-    display: flex;
-    justify-content: flex-end;
- }
- 
- .left-align {
-     display: flex;
-     justify-content: flex-start;  
- }
+  display: flex;
+  justify-content: flex-end;
+}
 
- h2 {
-     width: 50%;
-     margin: 6rem;
-     font-size: 4rem;
-     color: #3A3A3A;
-     margin-bottom: 12rem;
- }
+.left-align {
+  display: flex;
+  justify-content: flex-start;  
+}
 
- p {
-    font-size: 1.5rem;
-    color: #ffff;
- }
- 
- .running-lines-container {
-    height: 300px;
-    position: relative;
-  }
+h2 {
+  width: 50%;
+  margin: 6rem;
+  font-size: 4rem;
+  color: #3A3A3A;
+  margin-bottom: 12rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #ffff;
+}
+
+.running-lines-container {
+  height: 300px;
+  position: relative;
+}
 
 .marquee-container {
-    width: 100%;
-    overflow: hidden;
-    background-color: #88F31D;
-  }
-  
-  
-  .marquee {
-    display: inline-block; /* Блок, который будет анимироваться */
-    white-space: nowrap; /* Текст не переносится на новую строку */
-    animation: marquee 20s linear infinite; /* Название анимации, продолжительность, тип и бесконечное повторение */
-  }
-  
-  .marquee-content {
-    padding-right: 0;/* Отступ справа для отделения текста от начала следующего круга анимации */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  @keyframes marquee {
-    0%   { transform: translateX(-100%); } /* Начальное положение: сдвигаем вправо на 100% ширины контейнера */
-    100% { transform: translateX(100%); } /* Конечное положение: сдвигаем влево на 100% ширины контейнера */
-  }
+  width: 100%;
+  overflow: hidden;
+  background-color: #88F31D;
+}
 
-  img {
-      height: 3rem;
-      width: 3rem;
-      color: #ffff;
-  }
+.marquee {
+  display: inline-block; /* Блок, который будет анимироваться */
+  white-space: nowrap; /* Текст не переносится на новую строку */
+  animation: marquee 10s linear infinite; /* Название анимации, продолжительность, тип и бесконечное повторение */
+}
 
-  .rotated-right {
-    background-color: #ffff;
-    position: absolute;
-    width: calc(100% + 90px);
-    z-index: 1;
-    left: -45px;
-    top: -80px;
-    transform: rotate(-15deg);
+.marquee-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
 
-    p {
-      color:#2B2B2B;
-    }
-  }
-  
-  .rotated-left {
-    position: absolute;
-    margin-bottom: 20px; /* Отступ между блоками с бегущими строками */
-    transform: rotate(10deg);
-    width: 140%;
-    background-color: #2B2B2B;
-    z-index: 2;
-    left: -10%;
-    top: 10%;
+@keyframes marquee {
+  0%   { transform: translateX(0); } /* Начальное положение */
+  100% { transform: translateX(-50%); } /* Конечное положение */
+}
 
-    p {
-      color:#88F31D;
-    }
+img {
+  height: 3rem;
+  width: 3rem;
+  color: #ffff;
+}
+
+.rotated-right {
+  background-color: #ffff;
+  position: absolute;
+  width: calc(100% + 90px);
+  z-index: 1;
+  left: -45px;
+  top: -80px;
+  transform: rotate(-15deg);
+
+  p {
+    color:#2B2B2B;
   }
-  
-  .no-rotate {
-    position: absolute;
-    bottom: 0;
+}
+
+.rotated-left {
+  position: absolute;
+  margin-bottom: 20px; /* Отступ между блоками с бегущими строками */
+  transform: rotate(10deg);
+  width: 140%;
+  background-color: #2B2B2B;
+  z-index: 2;
+  left: -10%;
+  top: 10%;
+
+  p {
+    color:#88F31D;
   }
-  
+}
+
+.no-rotate {
+  position: absolute;
+  bottom: 0;
+}

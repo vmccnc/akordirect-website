@@ -1,0 +1,70 @@
+.page-container {
+    max-width: 1720px;
+    // margin: 4rem 6rem;
+}
+
+.content-container {
+    display: flex;
+    margin: 4rem 6rem;
+    gap: 1rem;
+    background-color: #F4F4F4;
+    border-radius: 2rem;
+
+    // flex-direction: column;
+}
+
+h2, h3, p {
+    margin: 0 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-top: 4rem;
+}
+
+p {
+    font-size: 2.5rem;
+    font-family: 'Neue Machina Regular';
+    margin: 2rem 6rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-family: 'Neue Machina Regular';
+}
+
+.custom-list {
+    list-style-type: none; /* Remove default markers */
+    padding: 0;
+  }
+  
+  .custom-list li {
+    position: relative;
+    padding-left: 4rem; /* Space for custom marker */
+    margin: 2rem; /* Spacing between items */
+    font-size: 2rem;
+    font-family: 'Neue Machina Regular';
+  }
+  
+  .custom-list li::before {
+    content: ''; /* Empty content for marker */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center marker vertically */
+    width: 2rem; /* Marker width */
+    height: 2rem; /* Marker height */
+    background-image: url('../../../assets/imagies/sun.png'); /* Path to your image */
+    background-size: contain; /* Resize image to fit */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+  }
+
+  .right-align {
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ .left-align {
+     display: flex;
+     justify-content: flex-start;  
+ }

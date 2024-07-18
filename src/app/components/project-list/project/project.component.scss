@@ -1,27 +1,52 @@
 .card {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  // background-image: ;
+  margin: 10px;
+  // padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 27rem;
+  height: 35rem;
+  background-image: url('../../../../assets/imagies/project1.png'); /* Path to your image */
+  background-size: cover; /* Make sure the background covers the entire div */
+  background-position: center; /* Center the background image */
+  transition: background-size 0.5s ease, background-position 0.5s ease; /* Smooth transition */
+}
+
+.card:hover {
+    background-size: 150%; /* Zoom the background image */
+    background-position: center center; /* Keep the background image centered */
+    cursor: pointer;
   }
-  
-  .card img {
-    max-width: 100%;
-    border-radius: 4px 4px 0 0;
-  }
+
   
   .card-body {
-    padding: 10px;
+    padding-top: 25.5rem;
+    // padding: 10px;
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
   }
   
   .card-title {
     font-size: 1.25rem;
-    margin: 0 0 10px;
+    margin: 0;
+    background-color:  rgba(217, 217 ,217, 0.5);
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+    display: inline-block; /* Ensure the element behaves like a block element for clipping */
+    padding: 1rem 4rem 1rem 1rem; 
+    width: 35%;
   }
   
   .card-text {
     font-size: 1rem;
     color: #555;
+    background-color: rgba(217, 217 ,217, 0.5);
+    margin-top: 0;
+    padding: 1rem 4rem 4rem 1rem; 
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
   }
   

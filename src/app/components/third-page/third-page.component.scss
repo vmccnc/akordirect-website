@@ -1,5 +1,5 @@
 .third-page-container {
-    background-color: #ebebeb;
+    background-color: #f9f8f8;
 }
 
 .right-align {
@@ -14,8 +14,9 @@
 
  .head-content-container {
      display: flex;
-     justify-content: space-between;
-     align-items:center;
+     gap: 27rem;
+    //  justify-content: space-between;
+     align-items:flex-start;
     //  margin-left: 6rem;
     //  margin-top: 4rem;
      margin: 4rem 6rem;
@@ -27,9 +28,15 @@
      margin:  0;
  }
 
+ .description-container {
+    // width: 100%;
+
+ }
+
  p {
     font-size: 2rem;
-    width: 50%;
+    width: 100%;
+    font-family: 'Neune Machine', sans-serif;
  }  
 
 
@@ -37,7 +44,7 @@
     display: flex;
     // justify-content: space-between;
     align-items:flex-start;
-    gap: 7rem;
+    gap: 25rem;
  }
 
  .pictures-container {
@@ -67,6 +74,18 @@ mat-accordion {
 mat-expansion-panel {
     padding: 1rem;
 }
+
+.drop-button {
+    border-radius: 50%;
+    border:transparent;
+    
+}
+
+.drop-button.expanded {
+    transition: transform 0.3s;
+    transform: rotate(-45deg);
+    background-color: #88F31D;
+  }
 
 .third-page-button {
     margin-left: 2rem;

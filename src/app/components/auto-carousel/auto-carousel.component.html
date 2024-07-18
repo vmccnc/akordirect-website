@@ -1,0 +1,8 @@
+<div class="slider-container" (mouseenter)="stopAutoScroll()" (mouseleave)="startAutoScroll()">
+    <div class="slider-wrapper" [style.transform]="'translateX(' + (-this.currentIndex * (100 / this.numberOfItemsShown)) + '%)'">
+      <div class="slider-item" *ngFor="let item of items">
+        <ng-container *ngTemplateOutlet="template; context: { $implicit: item }"></ng-container>
+      </div>
+    </div>
+  </div>
+  

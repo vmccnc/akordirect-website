@@ -49,5 +49,10 @@ $vmccnc-web-angular-theme: mat.define-light-theme((
   src: url('../src/assets/fonts/Neue-Machina/NeueMachina-Bold.woff') format('woff'),
 }
 
+@font-face {
+  font-family: 'Neue Machina Regular';
+  src: url('../src/assets/fonts/Neue-Machina/NeueMachina-Regular.woff') format('woff'),
+}
+
 html, body { height: 100%; }
-body { margin: 0; font-family: 'TT Travels', sans-serif; }
+body { margin: 0; font-family: 'TT Travels', sans-serif; background-color: #f9f8f8; max-width: 1920px;}

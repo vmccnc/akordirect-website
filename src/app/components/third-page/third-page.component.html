@@ -3,7 +3,10 @@
     <div class="content-container">
         <div class="head-content-container">
             <h2>Услуги</h2>
-            <p>Мы готовы реализовать любые проекты, независимо от их сложности или масштаба.</p>
+            <div class="description-container">
+              <p>Наша команда готова взяться за проекты любого масштаба и сложности.</p>
+              <p>Реализуем проекты, воплощающие ваши уникальные идеи и видение.</p>
+            </div>
         </div>
         <div class="content">
             <div class="pictures-container">
@@ -12,65 +15,13 @@
 
             </div>
             <mat-accordion>
-                <!-- <mat-expansion-panel hideToggle>
-                  <!-- <mat-expansion-panel-header>
-                    <mat-panel-title> This is the expansion title </mat-panel-title>
-                    <mat-panel-description> This is a summary of the content </mat-panel-description>
-                  </mat-expansion-panel-header> -->
-                  <!-- <p>This is the primary content of the panel.</p> -->
-                <!-- </mat-expansion-panel> -->
-                <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+                <mat-expansion-panel *ngFor="let service of services; let i = index" (opened)="services[i].isExpanded = true" (closed)="services[i].isExpanded = false" hideToggle>
                   <mat-expansion-panel-header>
-                    <mat-panel-title>1 Performance-маркетинг</mat-panel-title>
-
-                    <!-- <mat-panel-description>
-                        Performance-маркетинг
-                    </mat-panel-description> -->
+                    <button class="drop-button" [ngClass]="{'expanded': service.isExpanded}" (click)="handleDropDownClick(i)"><mat-icon class="button-arrow">arrow_forward</mat-icon></button>
+                    <mat-panel-title>{{service.title}}</mat-panel-title>
                   </mat-expansion-panel-header>
-                  <p>Performance-маркетинг</p>
+                  <p>{{service.description}}</p>
                 </mat-expansion-panel>
-                <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>2 Influence-маркетинг</mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <p>Influence-маркетинг</p>
-                  </mat-expansion-panel>
-                  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>3 IT и автоматизация</mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <p>IT и автоматизация</p>
-                  </mat-expansion-panel>
-                  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>4 Упаковка и создание сайтов</mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <p>Упаковка и создание сайтов</p>
-                  </mat-expansion-panel>
-                  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>5 Дизайн и брендинг</mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <p>Дизайн и брендинг</p>
-                  </mat-expansion-panel>
-                  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>6 AR / VR проекты</mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <p>AR / VR проекты</p>
-                  </mat-expansion-panel>
-                  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>7 Продакшн и контент</mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <p>Продакшн и контент</p>
-                  </mat-expansion-panel>
-                  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>8 Геймификация и вовлечение</mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <p>Геймификация и вовлечение</p>
-                  </mat-expansion-panel>
               </mat-accordion>
         </div>
     </div>

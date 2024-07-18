@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Card } from 'src/app/interfaces/card.interface';
 import { TechnologiesService } from 'src/app/services/technologies.service';
 
@@ -7,15 +7,12 @@ import { TechnologiesService } from 'src/app/services/technologies.service';
   templateUrl: './fourth-page.component.html',
   styleUrls: ['./fourth-page.component.scss']
 })
-export class FourthPageComponent {
+export class FourthPageComponent implements OnInit {
+  cards: any[] = [];
 
-  cards: { [key: string]: Card[] } = {};
-  categories: string[] = [];
-  selectedCategory: string;
+  constructor(private techService: TechnologiesService) {}
 
-  constructor(private readonly technologiesService: TechnologiesService){
-    this.cards = this.technologiesService.getCards();
-    this.categories = this.technologiesService.getCategories();
-    this.selectedCategory = this.categories[0];
-  };
+  ngOnInit() {
+    this.cards = this.techService.getCards();
+  }
 }
