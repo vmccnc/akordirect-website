@@ -13,14 +13,11 @@ h2 {
   }
 
 .project-list-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    // gap: 0rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     padding-bottom: 6rem;
-
-
+    justify-items: center;
 }
 
 .right-align {

@@ -18,6 +18,7 @@ export class LanguageService {
     'Комплексной упаковке': { en: 'Comprehensive packaging' },
     'Кто мы?': { en: 'Who are we?' },
     'Akordirect  - профессиональное digital-агентство разработки мобильных приложений и сайтов, специализирующееся на создании инновационных решений.': { en: 'Akordirect is a professional digital agency for mobile app and website development specializing in innovative solutions.' },
+    'профессиональное digital-агентство разработки мобильных приложений и сайтов, специализирующееся на создании инновационных решений.': { en: 'professional digital agency for mobile app and website development specializing in innovative solutions.' },
     'Полный круг услуг': { en: 'Full range of services' },
     'Проводим полный цикл разработки – от концепции и дизайна до тестирования и поддержки.': { en: 'We handle the full development cycle—from concept and design to testing and support.' },
     'Инновационные решения': { en: 'Innovative solutions' },
