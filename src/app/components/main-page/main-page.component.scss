@@ -71,27 +71,17 @@
 }
 
 .statement-container {
-    position: absolute;
-    right: 6rem;
-	bottom: 17rem;
     display: flex;
-    background-color: #FFFFFF;
-    // margin-left: 2rem;
-    // margin-right: 2rem;
-    // flex: 0 1 50%;
-    // max-width: 100%; 
+    flex: 0 0 50%;
+    background-color: #3F3F3F;
     border-top-right-radius: 2rem;
     border-top-left-radius: 4rem;
     border-bottom-right-radius: 2rem;
-    // padding: 2rem;
     box-sizing: border-box;
     border: 2rem solid transparent;
-    
     height: 12rem;
-    // align-self: flex-end;
-    background-color: #3F3F3F;
     align-items: center;
-    // justify-content: center;
+    margin-left: 2rem;
 }
 
 .statement {
