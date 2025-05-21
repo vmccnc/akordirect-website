@@ -12,4 +12,11 @@ export class LayoutComponent {
   setLang(lang: 'ru' | 'en') {
     this.langService.setLanguage(lang);
   }
+
+  scrollToMain() {
+    const anchor = document.querySelector('#main');
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

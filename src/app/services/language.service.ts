@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class LanguageService {
-  currentLang: 'ru' | 'en' = 'ru';
+  currentLang: 'ru' | 'en' = 'en';
 
   private translations: Record<string, { en: string }> = {
     'Digital-агенство с экспертизой в': { en: 'Digital agency with expertise in' },
