@@ -46,7 +46,7 @@ h3 {
     font-family: 'Neue Machina Regular';
   }
   
-  .custom-list li::before {
+ .custom-list li::before {
     content: ''; /* Empty content for marker */
     position: absolute;
     left: 0;
@@ -63,6 +63,31 @@ h3 {
     display: flex;
     justify-content: flex-end;
  }
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  p {
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .custom-list li {
+    font-size: 1.5rem;
+  }
+}
  
  .left-align {
      display: flex;

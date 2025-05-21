@@ -66,4 +66,18 @@
     height: auto;
     display: block;
   }
+
+  @media (max-width: 768px) {
+    .carousel {
+      margin: 0 1rem;
+    }
+
+    .card-wrapper {
+      flex: 100%;
+    }
+
+    .nav-button {
+      display: none;
+    }
+  }
   
