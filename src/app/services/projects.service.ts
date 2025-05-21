@@ -9,7 +9,7 @@ import { Project } from '../interfaces/project.interface';
 export class ProjectsService {
 
   projects = [
-    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
+    { title: 'www.sofantastica.pl', description: 'Sofa, armchirs', imageUrl: 'assets/imagies/sof.jpg' },
     { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
     { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
     { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
