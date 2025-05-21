@@ -10,5 +10,13 @@ import { Project } from 'src/app/interfaces/project.interface';
 export class ProjectComponent {
   @Input() project!: Project;
 
-
+  getProjectLink(): string {
+    if (!this.project?.title) {
+      return '#';
+    }
+    const title = this.project.title;
+    return title.startsWith('http://') || title.startsWith('https://')
+      ? title
+      : `https://${title}`;
+  }
 }
