@@ -1,6 +1,6 @@
 <div class="contact-page-container">
     <div class="title-container">
-        <h3>Опишите свою задачу или вопрос в форме ниже</h3>
+        <h3>{{ 'Опишите свою задачу или вопрос в форме ниже' | translate }}</h3>
     </div>
     <div class="content-container">
         <div class="contact-links-container">
@@ -17,24 +17,24 @@
                 </a>
                 
             </div>
-            <div *ngIf="showMessage" class="message">Пожалуйста, установите Viber, чтобы связаться с нами через это приложение, 
-                или используйте альтернативные способы связи.</div>
-            <p>Наши месседжеры</p>
+            <div *ngIf="showMessage" class="message">{{ 'Пожалуйста, установите Viber, чтобы связаться с нами через это приложение,' | translate }}
+                {{ 'или используйте альтернативные способы связи.' | translate }}</div>
+            <p>{{ 'Наши месседжеры' | translate }}</p>
             <img src="assets/imagies/contactPageImage.png">
 
         </div>
         <form action="https://formsubmit.co/anastasiya.zhoroven@gmail.com" method="post" class="input-container" (ngSubmit)="submitForm()">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://vmccnc.github.io/akordirect-website/vmccnc-web-angular/">
-            <p class="form-title">Ваше имя</p>
+            <p class="form-title">{{ 'Ваше имя' | translate }}</p>
             <input type="text" name="firstname" class="data">
-            <p class="form-title">Ваш телефон</p>
+            <p class="form-title">{{ 'Ваш телефон' | translate }}</p>
             <input type="phone" name="lastname" class="data">
             <!-- <input type="email" name="email" class="data" placeholder="Email"> -->
-            <p class="form-title">Опишите задачу</p>
-            <textarea name="message" cols="30" rows="10" placeholder="Например: “Нужно продвижение мобильного приложения нашего банка. Начиная от установок, заканчивая консалтингом и доработками онбординга пользователей приложения”." class="message"></textarea>
-            <span class="agreement-text">Я согласен на обработку персональных данных</span>
-            <app-button [buttonTitle]="'Отправить запрос'" (click)="handleButtonClick()"></app-button>
+            <p class="form-title">{{ 'Опишите задачу' | translate }}</p>
+            <textarea name="message" cols="30" rows="10" placeholder="{{ 'Например: “Нужно продвижение мобильного приложения нашего банка. Начиная от установок, заканчивая консалтингом и доработками онбординга пользователей приложения”.' | translate }}" class="message"></textarea>
+            <span class="agreement-text">{{ 'Я согласен на обработку персональных данных' | translate }}</span>
+            <app-button [buttonTitle]="'Отправить запрос' | translate" (click)="handleButtonClick()"></app-button>
         </form>
         <!-- <button class="send-btn">Send message</button> -->
     </div>

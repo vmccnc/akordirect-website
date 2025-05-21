@@ -1,21 +1,21 @@
 <div class="main-page-container">
     <div class="title-container">
         <h1>
-            <p class="title">Digital-агенство с экспертизой в</p>
+            <p class="title">{{ 'Digital-агенство с экспертизой в' | translate }}</p>
             <p [style.color]="currentParagraph.color" id="paragraph">
-                {{ currentParagraph.title }}
+                {{ currentParagraph.title | translate }}
               </p>
         </h1>
     </div>
     <div class="pazzle-blocks-container">
     <div class="moto-container convex-left">
-        <p class="moto">Стремимся к совершенству в решении ваших <b>digital и IT</b> задач, используя передовые методы и технологии.</p>
+        <p class="moto">{{ 'Стремимся к совершенству в решении ваших digital и IT задач, используя передовые методы и технологии.' | translate }}</p>
     </div>
     <div class="statement-container convex-right">
-        <p class="statement">Быстро <span class="middot">&middot;</span> Эффективно <span class="middot">&middot;</span> Надежно</p>
+        <p class="statement">{{ 'Быстро' | translate }} <span class="middot">&middot;</span> {{ 'Эффективно' | translate }} <span class="middot">&middot;</span> {{ 'Надежно' | translate }}</p>
     </div>
     </div>
-    <app-button [buttonTitle]="'Начать проект'" (click)="handleButtonClick()"></app-button>
+    <app-button [buttonTitle]="'Начать проект' | translate" (click)="handleButtonClick()"></app-button>
 </div>
 
 

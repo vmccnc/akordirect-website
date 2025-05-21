@@ -35,6 +35,7 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
 import { JoinUsPageComponent } from './components/join-us-page/join-us-page.component';
 import { AutoCarouselComponent } from './components/auto-carousel/auto-carousel.component';
 import { TechnologyCardComponent } from './components/technology-card/technology-card.component';
+import { TranslatePipe } from './pipes/translate.pipe';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { TechnologyCardComponent } from './components/technology-card/technology
     JoinUsPageComponent,
     AutoCarouselComponent,
     TechnologyCardComponent,
+    TranslatePipe,
   ],
   imports: [
     BrowserModule,

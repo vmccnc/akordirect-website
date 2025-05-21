@@ -1,9 +1,13 @@
 <header class="navbar">
   <div class="logo">Akordirect</div>
   <nav class="nav-links">
-    <a href="#aboutCompany">О компании</a>
-    <a href="#services">Услуги</a>
-    <a href="#projects">Проекты</a>
+    <a href="#aboutCompany">{{ 'О компании' | translate }}</a>
+    <a href="#services">{{ 'Услуги' | translate }}</a>
+    <a href="#projects">{{ 'Проекты' | translate }}</a>
     <a href="#contacts">Contact</a>
   </nav>
+  <div class="lang-switch">
+    <button (click)="setLang('ru')">Ru</button>
+    <button (click)="setLang('en')">En</button>
+  </div>
 </header>
