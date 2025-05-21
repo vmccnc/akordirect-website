@@ -10,8 +10,8 @@ export class ProjectsService {
 
   projects = [
     { title: 'www.sofantastica.pl', description: 'Sofa, armchirs', imageUrl: 'assets/imagies/sof.jpg' },
-    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
-    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
+    { title: 'www.salivonchyk.pl', description: 'Horses farm', imageUrl: 'assets/imagies/saliv.jpg' },
+    { title: 'www.insaturbo4x4.com', description: 'Tires', imageUrl: 'assets/imagies/tires.jpg' },
     { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
     { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
     { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
