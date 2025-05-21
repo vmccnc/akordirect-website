@@ -1,6 +1,7 @@
-<div class="card" [ngStyle]="{'background-image': 'url(' + project.imageUrl + ')'}">
+<a class="card" [href]="'https://' + project.title" target="_blank"
+   [ngStyle]="{'background-image': 'url(' + project.imageUrl + ')'}">
     <div class="card-body">
       <h5 class="card-title">{{ project.title }}</h5>
       <p class="card-text">{{ project.description }}</p>
     </div>
-  </div>
+</a>
