@@ -74,6 +74,16 @@ export class LanguageService {
     'Отправить запрос': { en: 'Send request' },
     'О компании': { en: 'About' },
     'Проекты': { en: 'Projects' },
+    '1. Упаковка и создание сайтов': { en: '1. Packaging and website creation' },
+    '2. IOS & Android разработка': { en: '2. iOS & Android development' },
+    '3. Автоматизация разработки': { en: '3. Development automation' },
+    '4. Business Analytics': { en: '4. Business Analytics' },
+    '5. Дизайн & брендинг': { en: '5. Design & branding' },
+    'Мы создаем сайты, которые "упакованы" таким образом, чтобы посетители не только с интересом знакомились с брендом, но и были готовы совершать покупки или заказывать услуги.': { en: 'We create websites that are "packaged" so visitors are not only interested in the brand but also ready to make purchases or order services.' },
+    'Качественная мобильная разработка позволяет создавать удобные и функциональные приложения, которые помогают бизнесу эффективно взаимодействовать с клиентами на смартфонах и планшетах': { en: 'High-quality mobile development allows the creation of convenient and functional apps that help businesses interact effectively with clients on smartphones and tablets' },
+    'Разработка сервисов, автоматизация и интеграция процессов разработки.': { en: 'Development of services, automation and integration of development processes.' },
+    'Итеративного исследование и анализ  показателей бизнеса с целью получения инсайтов и разработки бизнес-планирования.': { en: 'Iterative research and analysis of business metrics to gain insights and develop business planning.' },
+    'Создаем дизайны,  отличающиеся яркой визуальной идентичностью и сильным характером, которые будут выделять бренд среди конкурентов и запоминаться целевой аудитории.': { en: 'We create designs with bright visual identity and strong character that make the brand stand out among competitors and remain memorable to the target audience.' },
   };
 
   setLanguage(lang: 'ru' | 'en') {
