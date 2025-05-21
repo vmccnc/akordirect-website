@@ -47,7 +47,14 @@
     margin: 0 10px; 
   }
   
-  .image-container img {
+.image-container img {
     height: 30px;
   }
+
+@media (max-width: 768px) {
+  .page-divider {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
   
