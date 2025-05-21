@@ -39,14 +39,28 @@
     width: 35%;
   }
   
-  .card-text {
+.card-text {
     font-size: 1rem;
     color: #555;
     background-color: rgba(217, 217 ,217, 0.5);
     margin-top: 0;
-    padding: 1rem 4rem 4rem 1rem; 
+    padding: 1rem 4rem 4rem 1rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 
   }
+
+@media (max-width: 768px) {
+  .card {
+    height: 20rem;
+  }
+
+  .card-body {
+    padding-top: 12rem;
+  }
+
+  .card-title {
+    width: 60%;
+  }
+}
   

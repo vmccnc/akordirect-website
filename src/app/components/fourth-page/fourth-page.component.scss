@@ -22,8 +22,24 @@
      justify-content: flex-start;  
  }
 
- mat-button-toggle-group {
-    margin: 2rem 6rem;
- }
+mat-button-toggle-group {
+   margin: 2rem 6rem;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  mat-button-toggle-group {
+    margin: 1rem;
+  }
+
+  .carousel {
+    margin-top: 1rem;
+  }
+}
 
  
