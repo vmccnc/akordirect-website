@@ -37,3 +37,14 @@
   background-color: rgba($color: #F8F8F8, $alpha: 0.2);
   border-radius: 1rem;
 }
+
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+
+.lang-switch button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

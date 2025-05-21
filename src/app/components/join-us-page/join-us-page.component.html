@@ -1,14 +1,14 @@
 <div class="page-container">
     <app-page-divider [pageNumber]="'06'" class="right-align"></app-page-divider>
-    <h2>Присоединяйся <br>к нашей команде!</h2>
-    <p>Ты мечтаешь о работе в динамичной и инновационной IT-компании? <br> 
-        <b>Тогда ты пришел по адресу!</b></p>
-    <p>Наша IT-команда ищет талантливых и амбициозных специалистов, готовых вместе с нами создавать технологии будущего.</p>
-    <h3>Мы предлагаем:</h3>
+    <h2>{{ 'Присоединяйся к нашей команде!' | translate }}</h2>
+    <p>{{ 'Ты мечтаешь о работе в динамичной и инновационной IT-компании?' | translate }} <br>
+        <b>{{ 'Тогда ты пришел по адресу!' | translate }}</b></p>
+    <p>{{ 'Наша IT-команда ищет талантливых и амбициозных специалистов, готовых вместе с нами создавать технологии будущего.' | translate }}</p>
+    <h3>{{ 'Мы предлагаем:' | translate }}</h3>
     <div class="content-container">
         <img src="assets/imagies/join_us.png">
         <ul class="custom-list">
-            <li *ngFor="let item of items">{{ item }}</li>
+            <li *ngFor="let item of items">{{ item | translate }}</li>
           </ul>
     </div>
 </div>
