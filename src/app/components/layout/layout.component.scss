@@ -48,3 +48,26 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin: 1rem 0;
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+  }
+}
