@@ -64,8 +64,6 @@ export class LanguageService {
     'Дружный коллектив единомышленников.': { en: 'Friendly team of like-minded people.' },
     'Профессиональное развитие и обучение.': { en: 'Professional growth and training.' },
     'Опишите свою задачу или вопрос в форме ниже': { en: 'Describe your task or question in the form below' },
-    'Пожалуйста, установите Viber, чтобы связаться с нами через это приложение,': { en: 'Please install Viber to contact us via this app,' },
-    'или используйте альтернативные способы связи.': { en: 'or use alternative ways to contact us.' },
     'Наши месседжеры': { en: 'Our messengers' },
     'Ваше имя': { en: 'Your name' },
     'Ваш телефон': { en: 'Your phone' },

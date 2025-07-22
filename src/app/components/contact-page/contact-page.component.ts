@@ -6,21 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-page.component.scss']
 })
 export class ContactPageComponent {
-  showMessage: boolean = false;
-
-  checkViber(event: Event) {
-    event.preventDefault();
-
-    const viberUrl = "viber://chat?number=%2B1234567890";
-
-    // Попытка открыть Viber
-    window.location.href = viberUrl;
-
-    // Задержка для отображения сообщения, если Viber не установлен
-    setTimeout(() => {
-      this.showMessage = true;
-    }, 1000);
-  }
 
   
   handleButtonClick(): void {
