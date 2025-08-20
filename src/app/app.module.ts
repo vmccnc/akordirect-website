@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { APP_BASE_HREF } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
+import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
@@ -12,9 +12,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import {MatExpansionModule} from '@angular/material/expansion';
-
-
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -56,7 +53,8 @@ import { TranslatePipe } from './pipes/translate.pipe';
     JoinUsPageComponent,
     AutoCarouselComponent,
     TechnologyCardComponent,
-    TranslatePipe,
+    TranslatePipe, 
+
   ],
   imports: [
     BrowserModule,
@@ -64,6 +62,7 @@ import { TranslatePipe } from './pipes/translate.pipe';
     BrowserAnimationsModule,
     HttpClientModule,
     MatIconModule,
+    MatSelectModule,
     MatInputModule,
     MatButtonModule,
     MatFormFieldModule,

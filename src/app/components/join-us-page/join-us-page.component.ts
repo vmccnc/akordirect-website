@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class JoinUsPageComponent {
   items = [
-    'Прохождение стажировки в режиме реальных проектов.',
-    'Возможность работать над захватывающими проектами в нашей IT-компании.',
-    'Дружный коллектив единомышленников.',
-    'Профессиональное развитие и обучение.'
+    'CAREER.BENEFITS.1',
+    'CAREER.BENEFITS.2',
+    'CAREER.BENEFITS.3',
+    'CAREER.BENEFITS.4'
   ];
 }

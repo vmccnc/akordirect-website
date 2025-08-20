@@ -3,8 +3,8 @@
     <div class="top-elements-container">
         <div class="text-container">
             <div class="title-container">
-                <h2>{{ 'Кто мы?' | translate }}</h2>
-                <p>- <b>Akordirect</b> - {{ 'профессиональное digital-агентство разработки мобильных приложений и сайтов, специализирующееся на создании инновационных решений.' | translate }}</p>
+                <h2>{{ 'ABOUT.TITLE' | translate }}</h2>
+                <p><b>Akor Direct</b>  {{ 'ABOUT.TEXT' | translate }}</p>
             </div>
         </div>
         <div class="image-container">
@@ -13,7 +13,7 @@
     </div>
     <app-carousel [items]="cards" [numberOfCardsShown]="2">
         <ng-template let-card>
-          <app-description-card [title]="card.title" [description]="card.description" [imageUrl]="card.imageUrl"></app-description-card>
+          <app-description-card [height]="'15rem'" [title]="card.title | translate" [description]="card.description | translate" [imageUrl]="card.imageUrl"></app-description-card>
         </ng-template>
     </app-carousel>
 </div>

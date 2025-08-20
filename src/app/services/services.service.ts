@@ -6,11 +6,11 @@ import { Injectable } from '@angular/core';
 export class ServicesService {
 
   services = [
-    { title: '1. Упаковка и создание сайтов', description: 'Мы создаем сайты, которые "упакованы" таким образом, чтобы посетители не только с интересом знакомились с брендом, но и были готовы совершать покупки или заказывать услуги.', isExpanded: false},
-    { title: '2. IOS & Android разработка', description: 'Качественная мобильная разработка позволяет создавать удобные и функциональные приложения, которые помогают бизнесу эффективно взаимодействовать с клиентами на смартфонах и планшетах', isExpanded: false},
-    { title: '3. Автоматизация разработки', description: 'Разработка сервисов, автоматизация и интеграция процессов разработки.', isExpanded: false},
-    { title: '4. Business Analytics', description: 'Итеративного исследование и анализ  показателей бизнеса с целью получения инсайтов и разработки бизнес-планирования.', isExpanded: false},
-    { title: '5. Дизайн & брендинг', description: 'Создаем дизайны,  отличающиеся яркой визуальной идентичностью и сильным характером, которые будут выделять бренд среди конкурентов и запоминаться целевой аудитории.', isExpanded: false},
+    { title: 'SERVICES.LIST.WEB', description: 'SERVICES.LIST.WEB_DESC', isExpanded: false},
+    { title: 'SERVICES.LIST.IOS', description: 'SERVICES.LIST.IOS_DESC', isExpanded: false},
+    { title: 'SERVICES.LIST.AUTO', description: 'SERVICES.LIST.AUTO_DESC', isExpanded: false},
+    { title: 'SERVICES.LIST.BA', description: 'SERVICES.LIST.BA_DESC', isExpanded: false},
+    { title: 'SERVICES.LIST.DESIGN', description: 'SERVICES.LIST.DESIGN_DESC', isExpanded: false},
   ];
 
   getServices() {

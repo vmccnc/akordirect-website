@@ -1,7 +1,4 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
-import { catchError, Observable, throwError } from 'rxjs';
-import { Project } from '../interfaces/project.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -9,15 +6,15 @@ import { Project } from '../interfaces/project.interface';
 export class ProjectsService {
 
   projects = [
-    { title: 'www.sofantastica.pl', description: 'Sofa, armchirs', imageUrl: 'assets/imagies/sof.jpg' },
-    { title: 'www.salivonchyk.pl', description: 'Horses farm', imageUrl: 'assets/imagies/saliv.jpg' },
-    { title: 'www.insaturbo4x4.com', description: 'Tires', imageUrl: 'assets/imagies/tires.jpg' },
-    { title: 'www.get-together.events', description: 'Meetings with friends', imageUrl: 'assets/imagies/meetings.jpg' },
-    { title: 'https://english-katt.vercel.app/', description: 'Learn English', imageUrl: 'assets/imagies/english.jpg' },
-    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
-    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
-    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
-    { title: 'Проект', description: 'Описание', imageUrl: 'assets/imagies/project1.png' },
+    { title: 'PROJECTS.LIST.1.NAME', description: 'PROJECTS.LIST.1.DESC', imageUrl: 'assets/imagies/project1.jpg', url: 'https://sofantastica.pl/' },
+    { title: 'PROJECTS.LIST.2.NAME', description: 'PROJECTS.LIST.2.DESC', imageUrl: 'assets/imagies/project2.jpg', url: 'https://salivonchyk.pl/' },
+    { title: 'PROJECTS.LIST.3.NAME', description: 'PROJECTS.LIST.3.DESC', imageUrl: 'assets/imagies/project3.jpg', url: 'https://www.insaturbo4x4.com/' },
+    { title: 'PROJECTS.LIST.4.NAME', description: 'PROJECTS.LIST.4.DESC', imageUrl: 'assets/imagies/project4.jpg', url: 'https://www.get-together.events/' },
+    { title: 'PROJECTS.LIST.5.NAME', description: 'PROJECTS.LIST.5.DESC', imageUrl: 'assets/imagies/project5.jpg', url: 'https://english-katt.vercel.app/' },
+    { title: 'PROJECTS.LIST.6.NAME', description: 'PROJECTS.LIST.6.DESC', imageUrl: 'assets/imagies/project6.jpg', url: '' },
+    { title: 'PROJECTS.LIST.7.NAME', description: 'PROJECTS.LIST.7.DESC', imageUrl: 'assets/imagies/project7.jpg', url: '' },
+    { title: 'PROJECTS.LIST.8.NAME', description: 'PROJECTS.LIST.8.DESC', imageUrl: 'assets/imagies/project8.jpg', url: '' },
+    { title: 'PROJECTS.LIST.9.NAME', description: 'PROJECTS.LIST.9.DESC', imageUrl: 'assets/imagies/project9.jpg', url: '' },
   ];
 
   getProjects() {

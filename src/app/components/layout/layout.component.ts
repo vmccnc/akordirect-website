@@ -1,22 +1,28 @@
-import { Component } from '@angular/core';
-import { LanguageService } from '../../services/language.service';
+import { Component, OnInit } from '@angular/core';
+import { TranslationService } from 'src/app/services/translation.service';
 
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss']
+  styleUrls: ['./layout.component.scss', './layout-media.component.scss']
 })
-export class LayoutComponent {
-  constructor(private langService: LanguageService) {}
+export class LayoutComponent implements OnInit{
+  selectedLang = 'en';  
+  languages = [
+    { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'pl', label: 'Polski', flag: '🇵🇱' },
+    { code: 'ru', label: 'Русский', flag: '🇷🇺' },
+  ];
 
-  setLang(lang: 'ru' | 'en') {
-    this.langService.setLanguage(lang);
+  constructor(private translationService: TranslationService) {}
+
+  ngOnInit() {
+    this.translationService.language$.subscribe(lang => this.selectedLang = lang);
+    this.translationService.setLanguage(this.selectedLang);
   }
 
-  scrollToMain() {
-    const anchor = document.querySelector('#main');
-    if (anchor) {
-      anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+  changeLang(lang: string) {
+    this.translationService.setLanguage(lang);
+
   }
 }

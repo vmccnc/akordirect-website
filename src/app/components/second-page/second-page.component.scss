@@ -38,9 +38,9 @@ p {
 }
 
 .marquee {
-  display: inline-block; /* Блок, который будет анимироваться */
-  white-space: nowrap; /* Текст не переносится на новую строку */
-  animation: marquee 10s linear infinite; /* Название анимации, продолжительность, тип и бесконечное повторение */
+  display: inline-block; 
+  white-space: nowrap; 
+  animation: marquee 10s linear infinite; 
 }
 
 .marquee-content {
@@ -51,8 +51,8 @@ p {
 }
 
 @keyframes marquee {
-  0%   { transform: translateX(0); } /* Начальное положение */
-  100% { transform: translateX(-50%); } /* Конечное положение */
+  0%   { transform: translateX(0); } 
+  100% { transform: translateX(-50%); } 
 }
 
 img {
@@ -77,7 +77,7 @@ img {
 
 .rotated-left {
   position: absolute;
-  margin-bottom: 20px; /* Отступ между блоками с бегущими строками */
+  margin-bottom: 20px; 
   transform: rotate(10deg);
   width: 140%;
   background-color: #2B2B2B;

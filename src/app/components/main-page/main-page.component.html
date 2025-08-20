@@ -1,21 +1,17 @@
 <div class="main-page-container">
-    <div class="title-container">
-        <h1>
-            <p class="title">{{ 'Digital-агенство с экспертизой в' | translate }}</p>
-            <p [style.color]="currentParagraph.color" id="paragraph">
-                {{ currentParagraph.title | translate }}
-              </p>
-        </h1>
-    </div>
-    <div class="pazzle-blocks-container">
-    <div class="moto-container convex-left">
-        <p class="moto">{{ 'Стремимся к совершенству в решении ваших digital и IT задач, используя передовые методы и технологии.' | translate }}</p>
+  <div class="pazzle-blocks-container">
+    <div class="title-container bottom-right">
+      <h1>
+        <p class="title">{{ 'MAIN.TITLE' | translate }}</p>
+        <p [style.color]="currentParagraph.color" id="paragraph">
+          {{ currentParagraph.key | translate}} 
+        </p>
+      </h1>
+      <p class="moto">{{ 'MAIN.DESCRIPTION' | translate }}</p>
     </div>
     <div class="statement-container convex-right">
-        <p class="statement">{{ 'Быстро' | translate }} <span class="middot">&middot;</span> {{ 'Эффективно' | translate }} <span class="middot">&middot;</span> {{ 'Надежно' | translate }}</p>
+      <p class="statement">{{ 'MAIN.TAG1' | translate }} <span class="middot">&middot;</span> {{ 'MAIN.TAG2' | translate }} <span class="middot">&middot;</span> {{ 'MAIN.TAG3' | translate }}</p>
     </div>
-    </div>
-    <app-button [buttonTitle]="'Начать проект' | translate" (click)="handleButtonClick()"></app-button>
+  </div>
+  <app-button [buttonTitle]="'MAIN.BUTTON' | translate" (click)="handleButtonClick()"></app-button>
 </div>
-
-

@@ -1,16 +1,9 @@
-.page-container {
-    max-width: 1720px;
-    // margin: 4rem 6rem;
-}
-
 .content-container {
     display: flex;
     margin: 4rem 6rem;
     gap: 1rem;
     background-color: #F4F4F4;
     border-radius: 2rem;
-
-    // flex-direction: column;
 }
 
 h2, h3, p {
@@ -34,29 +27,29 @@ h3 {
 }
 
 .custom-list {
-    list-style-type: none; /* Remove default markers */
+    list-style-type: none; 
     padding: 0;
   }
   
   .custom-list li {
     position: relative;
-    padding-left: 4rem; /* Space for custom marker */
-    margin: 2rem; /* Spacing between items */
+    padding-left: 4rem; 
+    margin: 2rem; 
     font-size: 2rem;
     font-family: 'Neue Machina Regular';
   }
   
- .custom-list li::before {
-    content: ''; /* Empty content for marker */
+  .custom-list li::before {
+    content: ''; 
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%); /* Center marker vertically */
-    width: 2rem; /* Marker width */
-    height: 2rem; /* Marker height */
-    background-image: url('../../../assets/imagies/sun.png'); /* Path to your image */
-    background-size: contain; /* Resize image to fit */
-    background-repeat: no-repeat; /* Prevent image from repeating */
+    transform: translateY(-50%); 
+    width: 2rem; 
+    height: 2rem; 
+    background-image: url('../../../assets/imagies/sun.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
   }
 
   .right-align {

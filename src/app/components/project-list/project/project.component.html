@@ -1,7 +1,6 @@
-<a class="card" [href]="getProjectLink()" target="_blank"
-   [ngStyle]="{'background-image': 'url(' + project.imageUrl + ')'}">
+<div class="card" [style.background-image]="'url(' + project.imageUrl + ')'" (click)="openProject()">
     <div class="card-body">
-      <h5 class="card-title">{{ project.title }}</h5>
-      <p class="card-text">{{ project.description }}</p>
+      <h5 class="card-title">{{ project.title | translate }}</h5>
+      <p class="card-text">{{ project.description | translate }}</p>
     </div>
-</a>
+</div>

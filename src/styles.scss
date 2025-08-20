@@ -55,7 +55,7 @@ $vmccnc-web-angular-theme: mat.define-light-theme((
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: 'TT Travels', sans-serif; background-color: #f9f8f8; max-width: 1920px;}
+body { margin: auto; font-family: 'TT Travels', sans-serif; background-color: #f9f8f8; max-width: 1920px;}
 
 @media (max-width: 600px) {
   h1 { font-size: 1.5rem; }
@@ -63,3 +63,4 @@ body { margin: 0; font-family: 'TT Travels', sans-serif; background-color: #f9f8
   h3 { font-size: 1.5rem; }
   p  { font-size: 1rem; }
 }
+

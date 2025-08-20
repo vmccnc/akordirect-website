@@ -2,6 +2,8 @@
     background-color: #DDDDDD;
     color: #3A3A3A;
     padding: 3rem 6rem;
+    overflow: hidden
+
 }
 
 .title-container {
@@ -52,6 +54,12 @@ a:hover {
     font-size: 2rem;
 }
 
+.contacts {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .icons-container {
     display: flex;
     gap: 1rem;
@@ -87,9 +95,10 @@ img {
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
     max-width: 40%;
     width: 100%;
+    padding-top: 3rem;
 }
 
 .data {

@@ -7,11 +7,11 @@ export class ParagrphService {
 
   paragraphs = [
 
-    { title: 'Performance - маркетинге', color: '#65CA00' },
-    { title: 'Web-разработке', color: '#FF9447' },
-    { title: 'Аndroid-разработке', color: '#C956FF' },
-    { title: 'Business-анализе', color: '#7B81FF' },
-    { title: 'Комплексной упаковке', color: '#FF299E' },
+    { key: 'MAIN.SUBTITLE.1', color: '#65CA00' },
+    { key: 'MAIN.SUBTITLE.2', color: '#FF9447' },
+    { key: 'MAIN.SUBTITLE.3', color: '#C956FF' },
+    { key: 'MAIN.SUBTITLE.4', color: '#7B81FF' },
+    { key: 'MAIN.SUBTITLE.5', color: '#FF299E' },
   
 ];
 

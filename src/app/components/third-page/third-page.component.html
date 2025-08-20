@@ -2,10 +2,10 @@
     <app-page-divider [pageNumber]="'03'" class="left-align"></app-page-divider>
     <div class="content-container">
         <div class="head-content-container">
-            <h2>{{ 'Услуги' | translate }}</h2>
+            <h2>{{ 'SERVICES.TITLE' | translate }}</h2>
             <div class="description-container">
-              <p>{{ 'Наша команда готова взяться за проекты любого масштаба и сложности.' | translate }}</p>
-              <p>{{ 'Реализуем проекты, воплощающие ваши уникальные идеи и видение.' | translate }}</p>
+              <p>{{ 'SERVICES.TEXT' | translate }}</p>
+              <p>{{ 'SERVICES.SUBTEXT' | translate }}</p>
             </div>
         </div>
         <div class="content">
@@ -25,6 +25,5 @@
               </mat-accordion>
         </div>
     </div>
-    <app-button [buttonTitle]="'Озвучить идею' | translate" (click)="handleButtonClick()"></app-button>
-
+    <app-button [buttonTitle]="'SERVICES.BUTTON.IDEA' | translate" (click)="handleButtonClick()"></app-button>
 </div>
