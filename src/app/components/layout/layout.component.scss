@@ -14,26 +14,90 @@
 
 .logo {
     font-family: 'Neue Machina';
-    font-size: 5rem;
+    font-size: 4rem;
     // margin-top: -7rem;
-    margin-left: 8rem;
+    display: flex;
+    margin-left: 4rem;
     color: #3F3F3F;
+    justify-content: center;
+    flex-basis: 30%;
+}
+
+.nav-links-container {
+  // float: right; 
+  justify-content: flex-end;
+  display: flex;
+  // gap: 2rem;
+  margin-right: 7rem;
+  flex-grow: 1;
+  font-size: 1rem;
+  align-items: center;
+
 }
 
 .nav-links {
-  // float: right; 
-  // justify-self: flex-start;
-  display: flex;
-  gap: 2rem;
-  margin-right: 4rem;
-}
-
-.nav-links a {
   color: #3A3A3A; /* Цвет ссылок */
   text-decoration: none; /* Убираем подчёркивание */
-  margin-left: 20px; /* Отступ между ссылками */
+  margin-left: 1rem; /* Отступ между ссылками */
   // border: 1px solid yellow;
   padding: 1rem 2rem;
   background-color: rgba($color: #F8F8F8, $alpha: 0.2);
   border-radius: 1rem;
 }
+
+
+.nav-links-container .lang-select {
+  margin-left: 1rem;
+  font-family: 'Neue Machina';
+  color: #3A3A3A;
+  font-size: 1rem;
+  width: auto;
+  padding: 0;
+}
+
+.nav-links-container .lang-select .mat-form-field-wrapper,
+.nav-links-container .lang-select .mat-form-field-flex,
+.nav-links-container .lang-select .mat-form-field-infix {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.nav-links-container .lang-select .mat-select-trigger {
+  color: #3A3A3A;
+  padding: 0;
+  background-color: rgba(248, 248, 248, 0.2);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.nav-links-container .lang-select .mat-select-value-text {
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-links-container .lang-select .mat-select-arrow {
+  color: #3A3A3A;
+  margin-left: 0.2rem;
+}
+
+
+.nav-links-container mat-form-field {
+  width: auto;
+  gap: 0;
+  border: 0;
+}
+
+.nav-links-container mat-form-field {
+  --mdc-outlined-text-field-outline-color: transparent
+}
+
+.nav-links-container mat-form-field:hover {
+  border: 0;
+}
+

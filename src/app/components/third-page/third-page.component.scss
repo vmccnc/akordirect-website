@@ -1,5 +1,6 @@
 .third-page-container {
     background-color: #f9f8f8;
+    overflow: hidden;
 }
 
 .right-align {
@@ -15,10 +16,7 @@
  .head-content-container {
      display: flex;
      gap: 27rem;
-    //  justify-content: space-between;
      align-items:flex-start;
-    //  margin-left: 6rem;
-    //  margin-top: 4rem;
      margin: 4rem 6rem;
  }
 
@@ -26,11 +24,6 @@
      font-size: 4rem;
      color: #3A3A3A;
      margin:  0;
- }
-
- .description-container {
-    // width: 100%;
-
  }
 
  p {
@@ -42,7 +35,6 @@
 
 .content {
     display: flex;
-    // justify-content: space-between;
     align-items:flex-start;
     gap: 25rem;
  }

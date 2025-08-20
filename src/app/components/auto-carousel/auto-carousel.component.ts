@@ -1,6 +1,4 @@
 import { AfterViewInit, Component, ContentChild, Input, OnDestroy, OnInit, TemplateRef } from '@angular/core';
-import { interval, Subscription } from 'rxjs';
-import { TechnologiesService } from 'src/app/services/technologies.service';
 
 @Component({
   selector: 'app-auto-carousel',
@@ -9,8 +7,8 @@ import { TechnologiesService } from 'src/app/services/technologies.service';
 })
 export class AutoCarouselComponent implements OnInit, AfterViewInit {
   @Input() items: any[] = [];
-  @Input() numberOfItemsShown: number = 3.5; // Default to 3.5 items visible
-  @Input() autoScrollInterval: number = 3000; // Default to 3 seconds
+  @Input() numberOfItemsShown: number = 3.5; 
+  @Input() autoScrollInterval: number = 3000; 
   @ContentChild(TemplateRef) template!: TemplateRef<any>;
 
   currentIndex = 0;
@@ -53,7 +51,7 @@ export class AutoCarouselComponent implements OnInit, AfterViewInit {
     if (this.currentIndex < this.items.length - this.numberOfItemsShown) {
       this.currentIndex++;
     } else {
-      this.currentIndex = 0; // Loop back to the start
+      this.currentIndex = 0;
     }
   }
 }

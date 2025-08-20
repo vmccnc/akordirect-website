@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Card } from 'src/app/interfaces/card.interface';
 import { TechnologiesService } from 'src/app/services/technologies.service';
 
 @Component({

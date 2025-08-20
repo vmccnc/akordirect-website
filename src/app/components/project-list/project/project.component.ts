@@ -10,5 +10,9 @@ import { Project } from 'src/app/interfaces/project.interface';
 export class ProjectComponent {
   @Input() project!: Project;
 
-
+  openProject() {
+    if (this.project.url) {
+      window.open(this.project.url, '_blank');
+    }
+  }
 }

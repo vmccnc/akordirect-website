@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { APP_BASE_HREF } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
+import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
@@ -12,9 +12,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import {MatExpansionModule} from '@angular/material/expansion';
-
-
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,6 +32,7 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
 import { JoinUsPageComponent } from './components/join-us-page/join-us-page.component';
 import { AutoCarouselComponent } from './components/auto-carousel/auto-carousel.component';
 import { TechnologyCardComponent } from './components/technology-card/technology-card.component';
+import { TranslatePipe } from './pipes/translate.pipe';
 
 @NgModule({
   declarations: [
@@ -55,6 +53,7 @@ import { TechnologyCardComponent } from './components/technology-card/technology
     JoinUsPageComponent,
     AutoCarouselComponent,
     TechnologyCardComponent,
+    TranslatePipe, 
   ],
   imports: [
     BrowserModule,
@@ -62,6 +61,7 @@ import { TechnologyCardComponent } from './components/technology-card/technology
     BrowserAnimationsModule,
     HttpClientModule,
     MatIconModule,
+    MatSelectModule,
     MatInputModule,
     MatButtonModule,
     MatFormFieldModule,

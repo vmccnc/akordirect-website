@@ -1,12 +1,6 @@
 <div class="page-with-carousel-container">
     <app-page-divider [pageNumber]="'04'" class="right-align"></app-page-divider>
-    <h2>Технологии</h2>
-    <!-- <mat-button-toggle-group #group="matButtonToggleGroup" (change)="selectedCategory = group.value">
-      <mat-button-toggle *ngFor="let category of categories" [value]="category">
-        {{ category }}
-      </mat-button-toggle>
-    </mat-button-toggle-group> -->
-
+    <h2>{{ 'TECH.TITLE' | translate }}</h2>
     <app-auto-carousel [items]="cards" [numberOfItemsShown]="3.5">
       <ng-template let-item>
         <app-technology-card [item]="item"></app-technology-card>

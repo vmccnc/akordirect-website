@@ -11,7 +11,6 @@ export class ProjectListComponent {
   projects: Project[] = [];
 
   constructor(private readonly projectsService: ProjectsService){
-    // this.fetchData()
     this.projects = this.projectsService.getProjects();
   };
 
@@ -21,9 +20,4 @@ export class ProjectListComponent {
     event.preventDefault();
     this.showAll = true;
   }
-  // fetchData(): void {
-  //   this.projects = this.projectsService.getProjects();
-   
-  // }
-  
 }

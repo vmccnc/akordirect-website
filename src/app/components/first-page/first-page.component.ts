@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component  } from '@angular/core';
 import { Project } from 'src/app/interfaces/project.interface';
 import { CardService } from 'src/app/services/card.service';
 

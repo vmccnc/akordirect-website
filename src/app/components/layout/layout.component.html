@@ -1,9 +1,16 @@
 <header class="navbar">
-  <div class="logo">Akordirect</div>
-  <nav class="nav-links">
-    <a href="#aboutCompany">О компании</a>
-    <a href="#services">Услуги</a>
-    <a href="#projects">Проекты</a>
-    <a href="#contacts">Contact</a>
+  <div class="logo">Akor Direct</div>
+  <nav class="nav-links-container">
+    <a class="nav-links" href="#aboutCompany">{{ 'MENU.ABOUT' | translate }}</a>
+    <a class="nav-links" href="#services">{{ 'MENU.SERVICES' | translate }}</a>
+    <a class="nav-links" href="#projects">{{ 'MENU.PROJECTS' | translate }}</a>
+    <a class="nav-links" href="#contacts">{{ 'MENU.CONTACT' | translate }}</a>
+    <mat-form-field appearance="outline" hideRequiredMarker subscriptSizing="dynamic" [style.width.px]="110" class="nav-links lang-select">
+      <mat-select [(value)]="selectedLang" (selectionChange)="changeLang($event.value)">
+        <mat-option *ngFor="let lang of languages" [value]="lang.code">
+          {{ lang.flag }} {{lang.code}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
   </nav>
 </header>

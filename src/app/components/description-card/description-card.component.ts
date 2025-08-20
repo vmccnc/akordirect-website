@@ -10,5 +10,6 @@ export class DescriptionCardComponent {
   @Input() title: string = '';
   @Input() description: string = '';
   @Input() imageUrl: string = '';
+  @Input() height: string = '';
 
 }
