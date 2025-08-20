@@ -35,6 +35,7 @@
                 
             </div>
             <p>{{ 'CONTACT.MESSENGERS' | translate }}</p>
+
             <img src="assets/imagies/contactPageImage.png">
 
         </div>
@@ -49,6 +50,7 @@
             <textarea name="message" cols="30" rows="10" placeholder="{{'CONTACT.PLACEHOLDER' | translate }}" class="message"></textarea>
             <span class="agreement-text">{{ 'CONTACT.CONSENT' | translate }}</span>
             <app-button [buttonTitle]="'CONTACT.BUTTON' | translate " (click)="handleButtonClick()"></app-button>
+
         </form>
     </div>
 </div>

@@ -54,6 +54,7 @@ import { TranslatePipe } from './pipes/translate.pipe';
     AutoCarouselComponent,
     TechnologyCardComponent,
     TranslatePipe, 
+
   ],
   imports: [
     BrowserModule,

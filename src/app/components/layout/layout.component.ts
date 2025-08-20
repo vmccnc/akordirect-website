@@ -23,5 +23,6 @@ export class LayoutComponent implements OnInit{
 
   changeLang(lang: string) {
     this.translationService.setLanguage(lang);
+
   }
 }

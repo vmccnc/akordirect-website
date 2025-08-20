@@ -12,14 +12,11 @@ h2 {
   }
 
 .project-list-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    // gap: 0rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     padding-bottom: 6rem;
-
-
+    justify-items: center;
 }
 
 .right-align {
@@ -32,9 +29,30 @@ h2 {
      justify-content: flex-start;  
  }
 
- app-button {
+app-button {
     display: block;
     margin-left: 40%;
     margin-top: 0;
     padding-bottom: 6rem;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    margin: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .project-list-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  app-button {
+    margin-left: 0;
+    padding-bottom: 2rem;
+  }
 }

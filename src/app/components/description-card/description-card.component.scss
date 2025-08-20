@@ -12,4 +12,16 @@ mat-card {
 mat-card-title {
     font-size: 2rem;
     margin: 1rem;
+ }
+
+@media (max-width: 768px) {
+  mat-card-title {
+    font-size: 1.5rem;
+  }
+
+  img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+  }
 }

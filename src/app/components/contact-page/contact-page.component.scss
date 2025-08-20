@@ -153,4 +153,39 @@ img {
     color: #3A3A3A;
 }
 
+@media (max-width: 768px) {
+  .contact-page-container {
+    padding: 2rem;
+  }
+
+  .title-container {
+    flex-direction: column;
+    gap: 1rem;
+
+    p {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  h3 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  img {
+    height: 15rem;
+    width: 15rem;
+    margin: 0 auto;
+  }
+
+  .input-container {
+    max-width: 100%;
+  }
+}
+
 

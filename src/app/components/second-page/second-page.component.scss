@@ -94,3 +94,39 @@ img {
   position: absolute;
   bottom: 0;
 }
+
+@media (max-width: 768px) {
+  h2 {
+    width: 100%;
+    margin: 2rem 1rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .running-lines-container {
+    height: auto;
+  }
+
+  .marquee-container {
+    width: 100%;
+    transform: none;
+    position: static;
+    margin: 1rem 0;
+  }
+
+  .rotated-right,
+  .rotated-left {
+    position: static;
+    width: 100%;
+    transform: none;
+    left: 0;
+    top: 0;
+    margin: 1rem 0;
+  }
+
+  img {
+    height: 2rem;
+    width: 2rem;
+  }
+}

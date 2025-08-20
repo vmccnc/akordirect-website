@@ -88,3 +88,36 @@ app-button {
     margin-top: 6rem;
     margin-left: 40%;
 }
+
+@media (max-width: 768px) {
+  .head-content-container {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .pictures-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  img {
+    width: 10rem;
+    height: 10rem;
+    margin: 0.5rem;
+  }
+
+  app-button {
+    margin-left: 0;
+  }
+}
