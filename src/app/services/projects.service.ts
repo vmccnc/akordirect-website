@@ -7,7 +7,7 @@ export class ProjectsService {
 
   projects = [
     { title: 'PROJECTS.LIST.1.NAME', description: 'PROJECTS.LIST.1.DESC', imageUrl: 'assets/imagies/project1.jpg', url: 'https://sofantastica.com/' },
-    { title: 'PROJECTS.LIST.2.NAME', description: 'PROJECTS.LIST.2.DESC', imageUrl: 'assets/imagies/project2.jpg', url: 'https://salivonchyk.pl/' },
+    { title: 'PROJECTS.LIST.2.NAME', description: 'PROJECTS.LIST.2.DESC', imageUrl: 'assets/imagies/project2.jpg', url: '' },
     { title: 'PROJECTS.LIST.3.NAME', description: 'PROJECTS.LIST.3.DESC', imageUrl: 'assets/imagies/project3.jpg', url: 'https://insaturbo4x4.pl/' },
     { title: 'PROJECTS.LIST.4.NAME', description: 'PROJECTS.LIST.4.DESC', imageUrl: 'assets/imagies/project4.jpg', url: 'https://meetingwithfriends.com/' },
     { title: 'PROJECTS.LIST.5.NAME', description: 'PROJECTS.LIST.5.DESC', imageUrl: 'assets/imagies/project5.jpg', url: 'https://english-cat.com/' },
