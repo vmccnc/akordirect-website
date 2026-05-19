@@ -39,7 +39,7 @@
             <img src="assets/imagies/contactPageImage.png">
 
         </div>
-        <form action="https://formsubmit.co/anastasiya.zhoroven@gmail.com" method="post" class="input-container" (ngSubmit)="submitForm()">
+        <form action="https://formsubmit.co/akordirect@gmail.com" method="post" class="input-container">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://www.akordirect.com/">
             <p class="form-title">{{ 'CONTACT.NAME' | translate }}</p>
@@ -49,7 +49,7 @@
             <p class="form-title">{{ 'CONTACT.TASK' | translate }}</p>
             <textarea name="message" cols="30" rows="10" placeholder="{{'CONTACT.PLACEHOLDER' | translate }}" class="message"></textarea>
             <span class="agreement-text">{{ 'CONTACT.CONSENT' | translate }}</span>
-            <app-button [buttonTitle]="'CONTACT.BUTTON' | translate " (click)="handleButtonClick()"></app-button>
+            <app-button [buttonTitle]="'CONTACT.BUTTON' | translate " buttonType="submit"></app-button>
 
         </form>
     </div>

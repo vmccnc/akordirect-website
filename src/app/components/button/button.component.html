@@ -1,5 +1,5 @@
 <div class="button-container">
-  <button mat-fab extended class="custom-button" (click)="handleButtonClick()">
+  <button mat-fab extended class="custom-button" [attr.type]="buttonType" (click)="handleButtonClick()">
     <span class="button-text">{{ buttonTitle }}</span>
     <mat-icon class="custom-icon">arrow_forward</mat-icon>
   </button>

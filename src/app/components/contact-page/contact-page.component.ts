@@ -5,13 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './contact-page.component.html',
   styleUrls: ['./contact-page.component.scss']
 })
-export class ContactPageComponent {
-  showMessage: boolean = false;
-  
-  handleButtonClick(): void {
-    this.submitForm();
-  }
-  submitForm(): void {
-    
-  }
-}
+export class ContactPageComponent {}

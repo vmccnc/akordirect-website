@@ -7,6 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() buttonTitle: string = '';
+  @Input() buttonType: 'button' | 'submit' = 'button';
 
-  handleButtonClick(){};
+  handleButtonClick(){}
 }
+
