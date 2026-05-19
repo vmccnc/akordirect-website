@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contact-page',
@@ -7,11 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ContactPageComponent {
   showMessage: boolean = false;
-  
+
+  @ViewChild('contactForm') contactForm?: ElementRef<HTMLFormElement>;
+
   handleButtonClick(): void {
-    this.submitForm();
+    this.contactForm?.nativeElement.submit();
   }
-  submitForm(): void {
-    
-  }
+
+  submitForm(): void {}
 }
